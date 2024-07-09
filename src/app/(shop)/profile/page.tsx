@@ -16,10 +16,9 @@ export default async function ProfilePage() {
 
       {/* <pre>{JSON.stringify(session.user, null, 2)}</pre> */}
 
-      <h3 className="text-3xl mb-10">{session.user.name}</h3>
-      <h3 className="text-3xl mb-10">{session.user.email}</h3>
-      <h3 className="text-3xl mb-10">{session.user.id}</h3>
-      <h3 className="text-3xl mb-10">{session.user.role}</h3>
+      <h3 className="text-3xl mb-10">Nombres: {session.user.name}</h3>
+      <h3 className="text-3xl mb-10">Correo: {session.user.email}</h3>
+      <h3 className="text-3xl mb-10">Tipo: {session.user.role}</h3>
     </div>
   );
 }
